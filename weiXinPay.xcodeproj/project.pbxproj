@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99B32A9B1A8845A1003837A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B32A9A1A8845A1003837A8 /* main.m */; };
+		99B32A9E1A8845A1003837A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B32A9D1A8845A1003837A8 /* AppDelegate.m */; };
+		99B32AA11A8845A1003837A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B32AA01A8845A1003837A8 /* ViewController.m */; };
+		99B32AA41A8845A1003837A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AA21A8845A1003837A8 /* Main.storyboard */; };
+		99B32AA61A8845A1003837A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AA51A8845A1003837A8 /* Images.xcassets */; };
+		99B32AA91A8845A1003837A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AA71A8845A1003837A8 /* LaunchScreen.xib */; };
+		99B32AB51A8845A2003837A8 /* weiXinPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B32AB41A8845A2003837A8 /* weiXinPayTests.m */; };
+		99B32AC31A884720003837A8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AC11A884720003837A8 /* logo.png */; };
+		99B32AC51A884B0F003837A8 /* logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AC41A884B0F003837A8 /* logo@2x.png */; };
+		99B32AC71A884BFF003837A8 /* 750x1334@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99B32AC61A884BFF003837A8 /* 750x1334@2x.png */; };
+		99B32AD11A884CF0003837A8 /* payRequsestHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = 99B32ACA1A884CF0003837A8 /* payRequsestHandler.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		99B32AD21A884CF0003837A8 /* TenpayUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = 99B32ACC1A884CF0003837A8 /* TenpayUtil.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		99B32AD31A884CF0003837A8 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B32ACE1A884CF0003837A8 /* libWeChatSDK.a */; };
+		99B8AD7A1B451B5E005D8705 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B8AD791B451B5E005D8705 /* SystemConfiguration.framework */; };
+		99B8AD7C1B451B6E005D8705 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B8AD7B1B451B6E005D8705 /* libz.dylib */; };
+		99B8AD7E1B451B7B005D8705 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B8AD7D1B451B7B005D8705 /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99B32AAF1A8845A1003837A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B32A8D1A8845A1003837A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B32A941A8845A1003837A8;
+			remoteInfo = weiXinPay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		99B32A951A8845A1003837A8 /* weiXinPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiXinPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B32A991A8845A1003837A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B32A9A1A8845A1003837A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99B32A9C1A8845A1003837A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		99B32A9D1A8845A1003837A8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		99B32A9F1A8845A1003837A8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		99B32AA01A8845A1003837A8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		99B32AA31A8845A1003837A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		99B32AA51A8845A1003837A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99B32AA81A8845A1003837A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		99B32AAE1A8845A1003837A8 /* weiXinPayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = weiXinPayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B32AB31A8845A2003837A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99B32AB41A8845A2003837A8 /* weiXinPayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weiXinPayTests.m; sourceTree = "<group>"; };
+		99B32AC11A884720003837A8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../weiXinPay/logo.png; sourceTree = "<group>"; };
+		99B32AC41A884B0F003837A8 /* logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@2x.png"; sourceTree = "<group>"; };
+		99B32AC61A884BFF003837A8 /* 750x1334@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "750x1334@2x.png"; sourceTree = "<group>"; };
+		99B32AC91A884CF0003837A8 /* payRequsestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = payRequsestHandler.h; sourceTree = "<group>"; };
+		99B32ACA1A884CF0003837A8 /* payRequsestHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = payRequsestHandler.mm; sourceTree = "<group>"; };
+		99B32ACB1A884CF0003837A8 /* TenpayUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TenpayUtil.h; sourceTree = "<group>"; };
+		99B32ACC1A884CF0003837A8 /* TenpayUtil.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TenpayUtil.mm; sourceTree = "<group>"; };
+		99B32ACE1A884CF0003837A8 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		99B32ACF1A884CF0003837A8 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		99B32AD01A884CF0003837A8 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		99B8AD791B451B5E005D8705 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		99B8AD7B1B451B6E005D8705 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		99B8AD7D1B451B7B005D8705 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99B32A921A8845A1003837A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B8AD7E1B451B7B005D8705 /* libsqlite3.0.dylib in Frameworks */,
+				99B8AD7C1B451B6E005D8705 /* libz.dylib in Frameworks */,
+				99B8AD7A1B451B5E005D8705 /* SystemConfiguration.framework in Frameworks */,
+				99B32AD31A884CF0003837A8 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B32AAB1A8845A1003837A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		99B32A8C1A8845A1003837A8 = {
+			isa = PBXGroup;
+			children = (
+				99B8AD7D1B451B7B005D8705 /* libsqlite3.0.dylib */,
+				99B8AD7B1B451B6E005D8705 /* libz.dylib */,
+				99B8AD791B451B5E005D8705 /* SystemConfiguration.framework */,
+				99B32A971A8845A1003837A8 /* weiXinPay */,
+				99B32AB11A8845A1003837A8 /* weiXinPayTests */,
+				99B32A961A8845A1003837A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99B32A961A8845A1003837A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99B32A951A8845A1003837A8 /* weiXinPay.app */,
+				99B32AAE1A8845A1003837A8 /* weiXinPayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99B32A971A8845A1003837A8 /* weiXinPay */ = {
+			isa = PBXGroup;
+			children = (
+				99B32AC81A884CF0003837A8 /* lib */,
+				99B32ACD1A884CF0003837A8 /* SDKExport */,
+				99B32A9C1A8845A1003837A8 /* AppDelegate.h */,
+				99B32A9D1A8845A1003837A8 /* AppDelegate.m */,
+				99B32A9F1A8845A1003837A8 /* ViewController.h */,
+				99B32AA01A8845A1003837A8 /* ViewController.m */,
+				99B32AA21A8845A1003837A8 /* Main.storyboard */,
+				99B32AA51A8845A1003837A8 /* Images.xcassets */,
+				99B32AA71A8845A1003837A8 /* LaunchScreen.xib */,
+				99B32A981A8845A1003837A8 /* Supporting Files */,
+			);
+			path = weiXinPay;
+			sourceTree = "<group>";
+		};
+		99B32A981A8845A1003837A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B32A991A8845A1003837A8 /* Info.plist */,
+				99B32A9A1A8845A1003837A8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99B32AB11A8845A1003837A8 /* weiXinPayTests */ = {
+			isa = PBXGroup;
+			children = (
+				99B32AB41A8845A2003837A8 /* weiXinPayTests.m */,
+				99B32AB21A8845A2003837A8 /* Supporting Files */,
+			);
+			path = weiXinPayTests;
+			sourceTree = "<group>";
+		};
+		99B32AB21A8845A2003837A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B32AC41A884B0F003837A8 /* logo@2x.png */,
+				99B32AC61A884BFF003837A8 /* 750x1334@2x.png */,
+				99B32AC11A884720003837A8 /* logo.png */,
+				99B32AB31A8845A2003837A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		99B32AC81A884CF0003837A8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				99B32AC91A884CF0003837A8 /* payRequsestHandler.h */,
+				99B32ACA1A884CF0003837A8 /* payRequsestHandler.mm */,
+				99B32ACB1A884CF0003837A8 /* TenpayUtil.h */,
+				99B32ACC1A884CF0003837A8 /* TenpayUtil.mm */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		99B32ACD1A884CF0003837A8 /* SDKExport */ = {
+			isa = PBXGroup;
+			children = (
+				99B32ACE1A884CF0003837A8 /* libWeChatSDK.a */,
+				99B32ACF1A884CF0003837A8 /* WXApi.h */,
+				99B32AD01A884CF0003837A8 /* WXApiObject.h */,
+			);
+			path = SDKExport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99B32A941A8845A1003837A8 /* weiXinPay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B32AB81A8845A2003837A8 /* Build configuration list for PBXNativeTarget "weiXinPay" */;
+			buildPhases = (
+				99B32A911A8845A1003837A8 /* Sources */,
+				99B32A921A8845A1003837A8 /* Frameworks */,
+				99B32A931A8845A1003837A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = weiXinPay;
+			productName = weiXinPay;
+			productReference = 99B32A951A8845A1003837A8 /* weiXinPay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99B32AAD1A8845A1003837A8 /* weiXinPayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B32ABB1A8845A2003837A8 /* Build configuration list for PBXNativeTarget "weiXinPayTests" */;
+			buildPhases = (
+				99B32AAA1A8845A1003837A8 /* Sources */,
+				99B32AAB1A8845A1003837A8 /* Frameworks */,
+				99B32AAC1A8845A1003837A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99B32AB01A8845A1003837A8 /* PBXTargetDependency */,
+			);
+			name = weiXinPayTests;
+			productName = weiXinPayTests;
+			productReference = 99B32AAE1A8845A1003837A8 /* weiXinPayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99B32A8D1A8845A1003837A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = denglong;
+				TargetAttributes = {
+					99B32A941A8845A1003837A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = FBH8QE45BN;
+					};
+					99B32AAD1A8845A1003837A8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 99B32A941A8845A1003837A8;
+					};
+				};
+			};
+			buildConfigurationList = 99B32A901A8845A1003837A8 /* Build configuration list for PBXProject "weiXinPay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99B32A8C1A8845A1003837A8;
+			productRefGroup = 99B32A961A8845A1003837A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99B32A941A8845A1003837A8 /* weiXinPay */,
+				99B32AAD1A8845A1003837A8 /* weiXinPayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99B32A931A8845A1003837A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B32AA41A8845A1003837A8 /* Main.storyboard in Resources */,
+				99B32AC31A884720003837A8 /* logo.png in Resources */,
+				99B32AA91A8845A1003837A8 /* LaunchScreen.xib in Resources */,
+				99B32AA61A8845A1003837A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B32AAC1A8845A1003837A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B32AC51A884B0F003837A8 /* logo@2x.png in Resources */,
+				99B32AC71A884BFF003837A8 /* 750x1334@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99B32A911A8845A1003837A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B32AA11A8845A1003837A8 /* ViewController.m in Sources */,
+				99B32AD11A884CF0003837A8 /* payRequsestHandler.mm in Sources */,
+				99B32AD21A884CF0003837A8 /* TenpayUtil.mm in Sources */,
+				99B32A9E1A8845A1003837A8 /* AppDelegate.m in Sources */,
+				99B32A9B1A8845A1003837A8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B32AAA1A8845A1003837A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B32AB51A8845A2003837A8 /* weiXinPayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99B32AB01A8845A1003837A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99B32A941A8845A1003837A8 /* weiXinPay */;
+			targetProxy = 99B32AAF1A8845A1003837A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99B32AA21A8845A1003837A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B32AA31A8845A1003837A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99B32AA71A8845A1003837A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B32AA81A8845A1003837A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99B32AB61A8845A2003837A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99B32AB71A8845A2003837A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99B32AB91A8845A2003837A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = weiXinPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weiXinPay/SDKExport",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		99B32ABA1A8845A2003837A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = weiXinPay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/weiXinPay/SDKExport",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		99B32ABC1A8845A2003837A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = weiXinPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weiXinPay.app/weiXinPay";
+			};
+			name = Debug;
+		};
+		99B32ABD1A8845A2003837A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = weiXinPayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/weiXinPay.app/weiXinPay";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99B32A901A8845A1003837A8 /* Build configuration list for PBXProject "weiXinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B32AB61A8845A2003837A8 /* Debug */,
+				99B32AB71A8845A2003837A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B32AB81A8845A2003837A8 /* Build configuration list for PBXNativeTarget "weiXinPay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B32AB91A8845A2003837A8 /* Debug */,
+				99B32ABA1A8845A2003837A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B32ABB1A8845A2003837A8 /* Build configuration list for PBXNativeTarget "weiXinPayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B32ABC1A8845A2003837A8 /* Debug */,
+				99B32ABD1A8845A2003837A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99B32A8D1A8845A1003837A8 /* Project object */;
+}
